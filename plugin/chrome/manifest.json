@@ -1,0 +1,19 @@
+{
+  "name": "My First Extension",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "The first extension that I made.",
+  "content_scripts": [
+        {
+            "matches": ["http://www.google.com/finance/company_news*"],
+              "js": ["page.js"],
+              "run_at": "document_idle"
+          }
+      ],
+  "browser_action": {
+      "default_icon": "plus.jpg"
+  },
+  "permissions": [
+    "http://www.google.com/"
+  ]
+}
