@@ -9,7 +9,8 @@
                  [clj-http "0.4.1"]
                  ;; JSON
                  [cheshire "4.0.0"]]
-  :dev-dependencies [[lein-marginalia "0.7.0"]]
+  :dev-dependencies [[lein-marginalia "0.7.0"]
+                     [lein-localrepo "0.3"]]
   :ring {:handler app.web/app}
   :plugins [[lein-ring "0.6.3"]]
   :main app.core)
