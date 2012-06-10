@@ -20,7 +20,7 @@
   ;; filters GET requests to / to be answered as such
   (GET "/tickers" [] (core/my-tickers))
   ;;
-  ;;(GET "/news/ticker/:ticker" [ticker] (core/news-for-ticker ticker))
+  (GET "/news/ticker/:ticker" [ticker] (core/news-for-ticker ticker))
   ;; This is for the Chrome Plugin to service page mark up
   (GET "/news/:title" [title]
        {:status 200
